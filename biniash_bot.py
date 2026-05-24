@@ -13,7 +13,7 @@ from telegram.ext import (
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = "8419165014:AAFMjuKFWqRc1EJBFNF3zBmi5TAZ-DOjljc"
+TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_CHAT_ID = None  # будет установлен при первом /start от админа
 
 # Состояния диалога
